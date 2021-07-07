@@ -1,0 +1,13 @@
+
+
+keyboard_teleop_topic: "ip_cam_keyboard_teleop"
+hz: 24 # node ros rate
+turbo/steps: 4
+turbo/linear_forward_min: 0.5
+turbo/linear_forward_max: 1.0
+turbo/linear_backward_min: 0.25
+turbo/linear_backward_max: 0.5
+turbo/angular_min: 0.7
+turbo/angular_max: 1.2
+
+

@@ -1,0 +1,10 @@
+<launch>
+
+<include file="$(find hikvision_ros)/launch/start_ip_cam_stream_bttm_side.launch" >
+  </include>
+
+<include file="$(find hikvision_ros)/launch/start_ip_cam_stream_top_side.launch" >
+  </include>
+
+
+</launch>

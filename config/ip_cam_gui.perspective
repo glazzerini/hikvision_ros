@@ -1,0 +1,423 @@
+{
+  "keys": {},
+  "groups": {
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "repr(QByteArray.hex)": "QtCore.QByteArray(b'01d9d0cb000300000000036b0000001e00000760000002a80000036b0000004300000760000002a8000000000000000007800000036b0000004300000760000002a8')",
+          "type": "repr(QByteArray.hex)",
+          "pretty-print": "     k   `   k C `        k C `  "
+        },
+        "state": {
+          "repr(QByteArray.hex)": "QtCore.QByteArray(b'000000ff00000000fd0000000200000002000003f60000023afc0100000004fb0000006a007200710074005f0072006f0062006f0074005f007300740065006500720069006e0067005f005f0052006f0062006f0074005300740065006500720069006e0067005f005f0031005f005f0052006f0062006f0074005300740065006500720069006e0067005500690100000000000004310000000000000000fb00000044007200710074005f00670072006100700068005f005f0052006f007300470072006100700068005f005f0031005f005f0052006f007300470072006100700068005500690100000000000002590000000000000000fc00000000000003f6000001a500fffffffc0200000002fc000000160000023a0000015700fffffffc0100000002fc0000000000000318000000c700fffffffa000000000200000005fb0000005a007200710074005f0069006d006100670065005f0076006900650077005f005f0049006d0061006700650056006900650077005f005f0031005f005f0049006d00610067006500560069006500770057006900640067006500740100000016000001d40000005100fffffffb0000006e007200710074005f00730069006d0070006c0065005f007700650062005f00620072006f0077007300650072005f0070006c007500670069006e005f005f004d007900200050006c007500670069006e005f005f0031005f005f004d00790050006c007500670069006e005500690100000000ffffffff0000001500fffffffb0000005a007200710074005f0069006d006100670065005f0076006900650077005f005f0049006d0061006700650056006900650077005f005f0032005f005f0049006d00610067006500560069006500770057006900640067006500740100000000ffffffff0000000000000000fb0000006c007200710074005f007200650063006f006e006600690067007500720065005f005f0050006100720061006d005f005f0031005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f0077006900640067006500740100000000ffffffff0000000000000000fb00000034007200710074005f007700650062005f005f005700650062005f005f0031005f005f0057006500620057006900640067006500740100000000ffffffff0000000000000000fb00000050007200710074005f00700074007a005f0070006c007500670069006e005f005f004d007900200050006c007500670069006e005f005f0031005f005f004d00790050006c007500670069006e00550069010000031e000000d8000000d800fffffffb00000040007200710074005f007300680065006c006c005f005f005300680065006c006c005f005f0031005f005f005300680065006c006c005700690064006700650074010000021c0000017e0000000000000000fc00000494000007fa0000000000fffffffc0200000003fb00000042007200710074005f0070006c006f0074005f005f0050006c006f0074005f005f0032005f005f00440061007400610050006c006f00740057006900640067006500740100000016000000f80000000000000000fb00000042007200710074005f0070006c006f0074005f005f0050006c006f0074005f005f0031005f005f00440061007400610050006c006f00740057006900640067006500740100000114000000c10000000000000000fb00000050007200710074005f0070006f00730065005f0076006900650077005f005f0050006f007300650056006900650077005f005f0031005f005f0047004c005600690065007700570069006400670065007401000000ab0000012a0000000000000000000000030000024d0000004cfc010000000ffc00000000000002ac0000000000fffffffc0200000002fb00000030005f005f0044006f0063006b0057006900640067006500740043006f006e007400610069006e00650072005f005f003101000000160000012c0000000000000000fc0000010a0000010f0000000000fffffffc0100000001fb00000022007200710074005f0074006f0070005f005f0054004f0050005f005f0031005f005f0100000297000002500000000000000000fb00000064007200710074005f006c00610075006e00630068005f005f004c00610075006e00630068005f005f0031005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f007700690064006700650074010000045e000003220000000000000000fb00000034007200710074005f006200610067005f005f004200610067005f005f0031005f005f00420061006700570069006400670065007401000004ed000001940000000000000000fb0000004c007200710074005f0063006f006e0073006f006c0065005f005f0043006f006e0073006f006c0065005f005f0031005f005f0043006f006e0073006f006c00650057006900640067006500740100000000000002f90000000000000000fb00000062007200710074005f0072006f0062006f0074005f006d006f006e00690074006f0072005f005f0052006f0062006f0074004d006f006e00690074006f0072005f005f0031005f005f0052006f0062006f00740020004d006f006e00690074006f007201000006610000011f0000000000000000fb00000078007200710074005f00720075006e00740069006d0065005f006d006f006e00690074006f0072005f005f00520075006e00740069006d0065004d006f006e00690074006f0072005f005f0031005f005f00520075006e00740069006d0065004d006f006e00690074006f007200570069006400670065007401000005ee000001920000000000000000fb00000034007200710074005f006200610067005f005f004200610067005f005f0032005f005f0042006100670057006900640067006500740100000687000001940000000000000000fb00000072007200710074005f0073006500720076006900630065005f00630061006c006c00650072005f005f005300650072007600690063006500430061006c006c00650072005f005f0031005f005f005300650072007600690063006500430061006c006c0065007200570069006400670065007401000008210000022a0000000000000000fb00000058007200710074005f007000750062006c00690073006800650072005f005f005000750062006c00690073006800650072005f005f0031005f005f005000750062006c006900730068006500720057006900640067006500740100000000000003910000000000000000fb0000004c007200710074005f0074006f007000690063005f005f0054006f0070006900630050006c007500670069006e005f005f0031005f005f0054006f00700069006300570069006400670065007401000008a1000000e80000000000000000fb00000026007200710074005f007200760069007a005f005f005200560069007a005f005f0031005f005f01000009a3000002eb0000000000000000fb00000044007200710074005f006200610067005f005f004200610067005f005f0031005f005f002f00630061006d006500720061005f0069006e0066006f005f005f0052006100770100000bb1000001100000000000000000fb0000004c007200710074005f00740066005f0074007200650065005f005f0052006f0073005400660054007200650065005f005f0031005f005f0052006f00730054006600540072006500650055006901000004ea000001890000000000000000fb00000050007200710074005f0061006300740069006f006e005f005f0041006300740069006f006e0050006c007500670069006e005f005f0031005f005f006d0065007300730061006700650073002e0075006901000004140000025f0000000000000000fb00000048006a0073006b005f007200710074005f0070006c007500670069006e0073005f005f00530065007200760069006300650042007500740074006f006e0073005f005f0031005f005f0100000224000000880000000000000000000003f60000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')",
+          "type": "repr(QByteArray.hex)",
+          "pretty-print": "                 jrqt_robot_steering__RobotSteering__1__RobotSteeringUi          Drqt_graph__RosGraph__1__RosGraphUi                                                                                                  Q                                                                                                                                                                                                                                                                                                                           ~                 Brqt_plot__Plot__2__DataPlotWidget          Brqt_plot__Plot__1__DataPlotWidget          Prqt_pose_view__PoseView__1__GLViewWidget                                                           ,                 \"rqt_top__TOP__1__          drqt_launch__Launch__1___plugincontainer_top_widget          4rqt_bag__Bag__1__BagWidget          Lrqt_console__Console__1__ConsoleWidget          brqt_robot_monitor__RobotMonitor__1__Robot Monitor          xrqt_runtime_monitor__RuntimeMonitor__1__RuntimeMonitorWidget          4rqt_bag__Bag__2__BagWidget          rrqt_service_caller__ServiceCaller__1__ServiceCallerWidget          Xrqt_publisher__Publisher__1__PublisherWidget          Lrqt_topic__TopicPlugin__1__TopicWidget          &rqt_rviz__RViz__1__          Drqt_bag__Bag__1__/camera_info__Raw          Lrqt_tf_tree__RosTfTree__1__RosTfTreeUi          Prqt_action__ActionPlugin__1__messages.ui          Hjsk_rqt_plugins__ServiceButtons__1__                            6MinimizedDockWidgetsToolbar        "
+        }
+      },
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "repr": "8",
+              "type": "repr"
+            }
+          },
+          "groups": {}
+        }
+      }
+    },
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "repr": "{'rqt_image_view/ImageView': [1], 'rqt_ptz_plugin/My Plugin': [1], 'rqt_simple_web_browser_plugin/My Plugin': [1]}",
+          "type": "repr"
+        }
+      },
+      "groups": {
+        "plugin__rqt_console__Console__1": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "exclude_filters": {
+                  "repr": "'severity'",
+                  "type": "repr"
+                },
+                "filter_splitter": {
+                  "repr(QByteArray.hex)": "QtCore.QByteArray(b'000000ff000000010000000200000072000000720100000009010000000200')",
+                  "type": "repr(QByteArray.hex)",
+                  "pretty-print": "       r r     "
+                },
+                "highlight_filters": {
+                  "repr": "'message'",
+                  "type": "repr"
+                },
+                "message_limit": {
+                  "repr": "'20000'",
+                  "type": "repr"
+                },
+                "paused": {
+                  "repr": "'false'",
+                  "type": "repr"
+                },
+                "settings_exist": {
+                  "repr": "'true'",
+                  "type": "repr"
+                },
+                "show_highlighted_only": {
+                  "repr": "'false'",
+                  "type": "repr"
+                },
+                "table_splitter": {
+                  "repr(QByteArray.hex)": "QtCore.QByteArray(b'000000ff000000010000000200000046000000ed0100000009010000000200')",
+                  "type": "repr(QByteArray.hex)",
+                  "pretty-print": "       F       "
+                }
+              },
+              "groups": {
+                "exclude_filter_0": {
+                  "keys": {
+                    "enabled": {
+                      "repr": "'true'",
+                      "type": "repr"
+                    },
+                    "itemlist": {
+                      "repr": "''",
+                      "type": "repr"
+                    }
+                  },
+                  "groups": {}
+                },
+                "highlight_filter_0": {
+                  "keys": {
+                    "enabled": {
+                      "repr": "'true'",
+                      "type": "repr"
+                    },
+                    "regex": {
+                      "repr": "'false'",
+                      "type": "repr"
+                    },
+                    "text": {
+                      "repr": "''",
+                      "type": "repr"
+                    }
+                  },
+                  "groups": {}
+                }
+              }
+            }
+          }
+        },
+        "plugin__rqt_image_view__ImageView__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__ImageViewWidget": {
+              "keys": {
+                "dock_widget_title": {
+                  "repr": "'Image View'",
+                  "type": "repr"
+                },
+                "dockable": {
+                  "repr": "True",
+                  "type": "repr"
+                },
+                "parent": {
+                  "repr": "None",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            },
+            "plugin": {
+              "keys": {
+                "dynamic_range": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "max_range": {
+                  "repr": "10.0",
+                  "type": "repr"
+                },
+                "mouse_pub_topic": {
+                  "repr": "'/topside/image_raw/compressed_mouse_left'",
+                  "type": "repr"
+                },
+                "num_gridlines": {
+                  "repr": "0",
+                  "type": "repr"
+                },
+                "publish_click_location": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "rotate": {
+                  "repr": "2",
+                  "type": "repr"
+                },
+                "smooth_image": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "toolbar_hidden": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "topic": {
+                  "repr": "'/topside/image_raw/compressed'",
+                  "type": "repr"
+                },
+                "zoom1": {
+                  "repr": "False",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_image_view__ImageView__2": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "dynamic_range": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "max_range": {
+                  "repr": "10.0",
+                  "type": "repr"
+                },
+                "mouse_pub_topic": {
+                  "repr": "''",
+                  "type": "repr"
+                },
+                "num_gridlines": {
+                  "repr": "0",
+                  "type": "repr"
+                },
+                "publish_click_location": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "rotate": {
+                  "repr": "0",
+                  "type": "repr"
+                },
+                "smooth_image": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "toolbar_hidden": {
+                  "repr": "False",
+                  "type": "repr"
+                },
+                "topic": {
+                  "repr": "''",
+                  "type": "repr"
+                },
+                "zoom1": {
+                  "repr": "False",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_ptz_plugin__My Plugin__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__MyPluginUi": {
+              "keys": {
+                "dock_widget_title": {
+                  "repr": "'PTZ Control'",
+                  "type": "repr"
+                },
+                "dockable": {
+                  "repr": "True",
+                  "type": "repr"
+                },
+                "parent": {
+                  "repr": "None",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_publisher__Publisher__1": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "publishers": {
+                  "repr": "'[]'",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_reconfigure__Param__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget___plugincontainer_top_widget": {
+              "keys": {
+                "dock_widget_title": {
+                  "repr": "'Dynamic Reconfigure'",
+                  "type": "repr"
+                },
+                "dockable": {
+                  "repr": "True",
+                  "type": "repr"
+                },
+                "parent": {
+                  "repr": "None",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            },
+            "plugin": {
+              "keys": {
+                "_splitter": {
+                  "repr(QByteArray.hex)": "QtCore.QByteArray(b'000000ff00000001000000020000012c000000640100000009010000000200')",
+                  "type": "repr(QByteArray.hex)",
+                  "pretty-print": "       , d     "
+                },
+                "expanded_nodes": {
+                  "repr": "['/ip_camera']",
+                  "type": "repr"
+                },
+                "selected_nodes": {
+                  "repr": "['/ip_camera/compressed']",
+                  "type": "repr"
+                },
+                "splitter": {
+                  "repr(QByteArray.hex)": "QtCore.QByteArray(b'000000ff0000000100000002000000ae0000006401ffffffff010000000100')",
+                  "type": "repr(QByteArray.hex)",
+                  "pretty-print": "         d     "
+                },
+                "text": {
+                  "repr": "''",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_shell__Shell__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__ShellWidget": {
+              "keys": {
+                "dock_widget_title": {
+                  "repr": "'SimpleShell'",
+                  "type": "repr"
+                },
+                "dockable": {
+                  "repr": "True",
+                  "type": "repr"
+                },
+                "parent": {
+                  "repr": "None",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            },
+            "plugin": {
+              "keys": {
+                "shell_type": {
+                  "repr": "2",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_simple_web_browser_plugin__My Plugin__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__MyPluginUi": {
+              "keys": {
+                "dock_widget_title": {
+                  "repr": "''",
+                  "type": "repr"
+                },
+                "dockable": {
+                  "repr": "True",
+                  "type": "repr"
+                },
+                "parent": {
+                  "repr": "None",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_tf_tree__RosTfTree__1": {
+          "keys": {},
+          "groups": {
+            "plugin": {
+              "keys": {
+                "auto_fit_graph_check_box_state": {
+                  "repr": "'true'",
+                  "type": "repr"
+                },
+                "highlight_connections_check_box_state": {
+                  "repr": "'true'",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        },
+        "plugin__rqt_web__Web__1": {
+          "keys": {},
+          "groups": {
+            "dock_widget__WebWidget": {
+              "keys": {
+                "dock_widget_title": {
+                  "repr": "'Web'",
+                  "type": "repr"
+                },
+                "dockable": {
+                  "repr": "True",
+                  "type": "repr"
+                },
+                "parent": {
+                  "repr": "None",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            },
+            "plugin": {
+              "keys": {
+                "url_completion": {
+                  "repr": "['', 'https://www.proxydocker.com/en/routerpassword/10.0.108.5', 'http://10.0.108.5/notSupported.asp', 'http://10.0.108.5/doc/page/login.asp?_1613584046585', 'https://www.google.com/', 'http://10.0.108.5/doc/page/login.asp?_1613729377642', 'about:blank', 'http://10.0.108.5/', 'https://www.google.com/search?source=hp&ei=h1YtYPKuKuiGjLsPhPesqAw&iflsig=AINFCbYAAAAAYC1kl8I-Jy5b-FgxdFQ67f_Ff68ZXjdw&q=10.0.108.5&btnK=Google+pretra\u017eivanje', 'http://10.0.108.5/doc/page/login.asp?_1613046383299']",
+                  "type": "repr"
+                },
+                "url_current": {
+                  "repr": "'http://10.0.108.5/'",
+                  "type": "repr"
+                }
+              },
+              "groups": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
