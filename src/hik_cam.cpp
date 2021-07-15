@@ -452,9 +452,9 @@ void HikvisionCamera::initializeROSParameters(){
 void HikvisionCamera::initializeROSSubscribers()
 {
     ROS_INFO("Initializing HikvisionCamera Subscribers");
-    ptz_controls_sub = priv_node.subscribe(PTZ_CONTROLS_TOPIC, ROS_RATE, &HikvisionCamera::ptzControlsCallback, this);
-    ptz_key_teleop_controls_sub = priv_node.subscribe(PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC, 10, &HikvisionCamera::ptzKeyboardControlsCallback, this);
-    ptz_joy_teleop_controls_sub = priv_node.subscribe(PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC, 10, &HikvisionCamera::ptzJoystickControlsCallback, this);
+    ptz_controls_sub = pub_node.subscribe(PTZ_CONTROLS_TOPIC, ROS_RATE, &HikvisionCamera::ptzControlsCallback, this);
+    ptz_key_teleop_controls_sub = pub_node.subscribe(PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC, 10, &HikvisionCamera::ptzKeyboardControlsCallback, this);
+    ptz_joy_teleop_controls_sub = pub_node.subscribe(PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC, 10, &HikvisionCamera::ptzJoystickControlsCallback, this);
 
 }
 
