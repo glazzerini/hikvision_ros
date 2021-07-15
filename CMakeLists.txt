@@ -39,5 +39,12 @@ target_link_libraries(hik_cam
 add_executable(hik_cam_node node/hik_cam_node.cpp)
 target_link_libraries(hik_cam_node hik_cam)
 
-#catkin_install_python(PROGRAMS py_nodes/bttn.py
- #                     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(TARGETS hik_cam hik_cam_node
+   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(DIRECTORY
+   lib/
+   DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})

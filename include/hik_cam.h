@@ -33,7 +33,8 @@ private:
     std::string PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC;
     std::string PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC;
     int ROS_RATE;
-    ros::NodeHandle priv_node;//("~");
+    ros::NodeHandle priv_node;
+    ros::NodeHandle pub_node;
     int ptz_state;
     static const int PTZ_CONTROLS_STOPPED = 0;
     static const int PAN_RIGHT_CMD=1;

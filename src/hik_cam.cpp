@@ -486,7 +486,7 @@ void HikvisionCamera::initializeROSServices()
 }
 
 
-HikvisionCamera::HikvisionCamera(){
+HikvisionCamera::HikvisionCamera(): priv_node("~"){
     ROS_INFO("in class constructor of HikvisionCamera");
 
     initializeHikvisionCameraAtributes();

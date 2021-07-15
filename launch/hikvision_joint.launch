@@ -1,0 +1,41 @@
+<launch>
+  <arg name="stream_url" default="$(optenv PLADYPOS_HIKVISION_STREAM rtsp://stdops:labos123@10.0.15.52:554" />
+  <arg name="camera_ip" default="$(optenv PLADYPOS_HIKVISION_IP 10.0.15.52" />
+  <arg name="tf_prefix" default="$(optenv PLADYPOS_TF_PREFIX pladypos)" />
+
+  <node pkg="hikvision_ros" type="hik_cam_node" name="ip_cam_node">
+    <env name="LD_LIBRARY_PATH" value="$(env LD_LIBRARY_PATH):$(find hikvision_ros)/lib:$(find hikvision_ros)/lib/HCNetSDKCom" />
+    <param name="ip_addr" value="$(arg camera_ip)" />
+    <param name="user_name" value="stdops" />
+    <param name="password" value="labos123" />
+    <param name="port" value="8000" />
+    <param name="channel" value="1" />
+    # <!--link_mode: 0-tcp, 1-udp, 2-multicast, 3-rtp, 4-rtp/rtsp, 5-rstp/http-->
+    <param name="link_mode" value="1" />
+
+    <param name="image_width" value="1920" />
+    <param name="image_height" value="1080" />
+    <param name="camera_frame_id" value="$(arg tf_prefix)/top_camera_frame)" />
+    <param name="camera_info_url" value="" />
+    
+    <param name="PTZ_CONTROLS_TOPIC" value="ptz_setpoints" />
+    <param name="PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC" value="key_vel" />
+    <param name="PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC" value="joy_vel" />
+    <param name="ROS_RATE" value="10" />
+  </node>
+
+  <include file="$(find video_stream_opencv)/launch/camera.launch" >
+    <arg name="camera_name" value="topcam" />
+    <arg name="video_stream_provider" value="$(arg stream_url)" />
+    <arg name="buffer_queue_size" value="1" />
+    <arg name="fps" value="16" />
+
+    <arg name="frame_id" value="$(arg tf_prefix)/top_camera_frame" />
+    <arg name="camera_info_url" value="" />
+
+    <arg name="flip_horizontal" value="false" />
+    <arg name="flip_vertical" value="false" />
+    <arg name="visualize" value="false" />
+  </include>
+     
+</launch>
