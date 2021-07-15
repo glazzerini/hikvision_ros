@@ -9,7 +9,7 @@ args = "--perspective-file $(find hikvision_ros)/config/ip_cam_gui.perspective"/
         <!-- node name and ros graph name -->
         <arg name="camera_name" value="topside" />
         <!-- url of the video stream -->
-        <arg name="video_stream_provider" value=" rtsp://stdops:labos123@10.0.108.5:554 drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=true " />
+        <arg name="video_stream_provider" value=" rtsp://stdops:labos123@10.0.15.52:554 drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=true " />
         
         <!-- rtsp://stdops:labos123@10.0.108.5:554 drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=true -->
         <!-- rtsp://stdops:labos123@10.0.108.5:554 latency=0 ! rtph264depay ! avdec_h264 ! videoconvert ! fpsdisplaysink sync=false -->
