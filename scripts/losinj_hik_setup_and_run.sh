@@ -10,7 +10,7 @@ echo 'Topside ROS distro:'$ROS_DISTRO
 export ROS_MASTER_URI=http://$ASV_NAME:11311/
 echo 'ROS master exported to: '$ROS_MASTER_URI
 #export ROS_IP=$ROS_IP
-#echo 'Exported topside ROS_IP: '$ROS_IP
+#secho 'Exported topside ROS_IP: '$ROS_IP
 
 
 echo 'Exported ASV name: '$ASV_NAME
