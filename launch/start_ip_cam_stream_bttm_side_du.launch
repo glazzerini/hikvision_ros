@@ -2,8 +2,8 @@
   
   <arg name="camera_ip" default="$(env PLADYPOS_HIKVISION_IP)" />
   
-  <arg name="tf_prefix" default="$(optenv PLADYPOS_TF_PREFIX) pladypos" />
-  <arg name="camera_name" value="topcam" />
+  <arg name="tf_prefix" default="$(optenv ASV_NAME) pladypos" />
+  <arg name="camera_name" value="$(env ASV_NAME)_topcam" />
 
   <node pkg="hikvision_ros" type="hik_cam_node" name="hik_ptz" ns="$(env ASV_NAME)" output="screen">
     <env name="LD_LIBRARY_PATH" value="$(env LD_LIBRARY_PATH):$(find hikvision_ros)/lib:$(find hikvision_ros)/lib/HCNetSDKCom" />
