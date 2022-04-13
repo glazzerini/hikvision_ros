@@ -224,29 +224,29 @@ void HikvisionCamera::ptzControlsCallback(const std_msgs::Int32::ConstPtr& msg){
         NET_DVR_PTZControl(data_play_handler, PAN_LEFT, 0);
         NET_DVR_PTZControl(data_play_handler, TILT_UP, 0);
         NET_DVR_PTZControl(data_play_handler, TILT_DOWN, 0);
-        ROS_INFO("Stopping all PTZ controls...");
+        //ROS_INFO("Stopping all PTZ controls...");
         break;
     case 1:
         NET_DVR_PTZControl(data_play_handler, PAN_RIGHT, 1);
-        ROS_INFO("Panning right...");
+        //ROS_INFO("Panning right...");
         sleep(0.1);
         NET_DVR_PTZControl(data_play_handler, PAN_RIGHT, 0);
         break;
     case 2:
         NET_DVR_PTZControl(data_play_handler, PAN_LEFT, 1);
-        ROS_INFO("Panning left...");
+        //ROS_INFO("Panning left...");
         sleep(0.1);
         NET_DVR_PTZControl(data_play_handler, PAN_LEFT, 0);
         break;
     case 3:
         NET_DVR_PTZControl(data_play_handler, TILT_UP, 1);
-        ROS_INFO("Tilting up...");
+        //ROS_INFO("Tilting up...");
         sleep(0.005);
         NET_DVR_PTZControl(data_play_handler, TILT_UP, 0);
         break;
     case 4:
         NET_DVR_PTZControl(data_play_handler, TILT_DOWN, 1);
-        ROS_INFO("Tilting down...");
+        //ROS_INFO("Tilting down...");
         sleep(0.1);
         NET_DVR_PTZControl(data_play_handler, TILT_DOWN, 0);
         break;
@@ -272,47 +272,47 @@ void HikvisionCamera::ptzKeyboardControlsCallback(const geometry_msgs::Twist::Co
     if ( pan > 0 & tilt==0) {
 //        control_code = PAN_LEFT_CMD;
         NET_DVR_PTZControl(data_play_handler, PAN_LEFT, 0);
-        ROS_INFO("Panning left...");
+        //ROS_INFO("Panning left...");
         ptz_state = PAN_LEFT_CMD;
     }
     else if (pan < 0 & tilt==0) {
 //        control_code = PAN_RIGHT_CMD;
         NET_DVR_PTZControl(data_play_handler, PAN_RIGHT, 0);
-        ROS_INFO("Panning right...");
+        //ROS_INFO("Panning right...");
         ptz_state = PAN_RIGHT_CMD;
     }
     else if ( pan==0 & tilt==0 & ( ptz_state == PAN_LEFT_CMD  | ptz_state == PAN_RIGHT_CMD  )){
         if ( ptz_state == PAN_LEFT_CMD  ) {
             NET_DVR_PTZControl(data_play_handler, PAN_LEFT, 1);
-            ROS_INFO("Stopping panning left...");
+            //ROS_INFO("Stopping panning left...");
             ptz_state = PTZ_CONTROLS_STOPPED;
         }
         else if ( ptz_state == PAN_RIGHT_CMD  ){
             NET_DVR_PTZControl(data_play_handler, PAN_RIGHT, 1);
-            ROS_INFO("Stopping panning right...");
+            //ROS_INFO("Stopping panning right...");
             ptz_state = PTZ_CONTROLS_STOPPED;
         }
     }
 
     if ( tilt>0 & pan==0 ){
         NET_DVR_PTZControl(data_play_handler, TILT_UP, 0);
-        ROS_INFO("Tilting up...");
+        //ROS_INFO("Tilting up...");
         ptz_state = TILT_UP_CMD;
     }
     else if ( tilt<0 & pan==0 ) {
         NET_DVR_PTZControl(data_play_handler, TILT_DOWN, 0);
-        ROS_INFO("Tilting down...");
+        //ROS_INFO("Tilting down...");
         ptz_state = TILT_DOWN_CMD;
     }
     else if ( tilt==0 & pan==0 & (ptz_state == TILT_UP_CMD | ptz_state==TILT_DOWN_CMD)) {
         if ( ptz_state == TILT_UP_CMD  ){
             for (int i=1; i<10; i++) NET_DVR_PTZControl(data_play_handler, TILT_UP, 1);
-            ROS_INFO("Stopping tilting up...");
+            //ROS_INFO("Stopping tilting up...");
             ptz_state = PTZ_CONTROLS_STOPPED;
         }
         else if (ptz_state==TILT_DOWN_CMD){
             for (int i=1; i<10; i++) NET_DVR_PTZControl(data_play_handler, TILT_DOWN, 1);
-            ROS_INFO("Stopping tilting down...");
+           //ROS_INFO("Stopping tilting down...");
             ptz_state = PTZ_CONTROLS_STOPPED;
 
         }
@@ -328,64 +328,64 @@ void HikvisionCamera::ptzKeyboardControlsCallback(const geometry_msgs::Twist::Co
 
     if ( zoom > 0 ) {
         NET_DVR_PTZControl(data_play_handler, ZOOM_IN, 0);
-        ROS_INFO("Zooming in...");
+        //ROS_INFO("Zooming in...");
         ptz_state = ZOOM_IN_CMD;
     }
     else if (zoom < 0 ) {
         NET_DVR_PTZControl(data_play_handler, ZOOM_OUT, 0);
-        ROS_INFO("Zooming out...");
+        //ROS_INFO("Zooming out...");
         ptz_state = ZOOM_OUT_CMD;
     }
     else if ( zoom==0 & ptz_state==ZOOM_IN_CMD ){
         NET_DVR_PTZControl(data_play_handler, ZOOM_IN, 1);
-        ROS_INFO("Stopping zooming in...");
+        //ROS_INFO("Stopping zooming in...");
         ptz_state = ZOOM_CONTROLS_STOPPED;
     }
     else if ( zoom==0 &  ptz_state==ZOOM_OUT_CMD) {
         NET_DVR_PTZControl(data_play_handler, ZOOM_OUT, 1);
-        ROS_INFO("Stopping zooming out...");
+        //ROS_INFO("Stopping zooming out...");
         ptz_state = ZOOM_CONTROLS_STOPPED;
     }
 
     if ( focus > 0 ) {
         NET_DVR_PTZControl(data_play_handler, FOCUS_FAR, 0);
-        ROS_INFO("Focusing far...");
+        //ROS_INFO("Focusing far...");
         ptz_state = FOCUS_FAR_CMD;
     }
     else if (focus < 0 ) {
         NET_DVR_PTZControl(data_play_handler, FOCUS_NEAR, 0);
-        ROS_INFO("Focusing near...");
+        //ROS_INFO("Focusing near...");
         ptz_state = FOCUS_NEAR_CMD;
     }
     else if ( focus==0 & ptz_state==FOCUS_FAR ) {
         NET_DVR_PTZControl(data_play_handler, FOCUS_FAR, 1);
-        ROS_INFO("Stopping focusing far...");
+        //ROS_INFO("Stopping focusing far...");
         ptz_state = FOCUS_CONTROLS_STOPPED;
     }
     else if ( focus==0 &  ptz_state==FOCUS_NEAR) {
         NET_DVR_PTZControl(data_play_handler, FOCUS_NEAR, 1);
-        ROS_INFO("Stopping focusing near...");
+        //ROS_INFO("Stopping focusing near...");
         ptz_state = FOCUS_CONTROLS_STOPPED;
     }
 
     if ( iris > 0 ) {
         NET_DVR_PTZControl(data_play_handler, IRIS_OPEN, 0);
-        ROS_INFO("Opening iris...");
+        //ROS_INFO("Opening iris...");
         ptz_state = IRIS_OPEN_CMD;
     }
     else if (iris < 0 ) {
         NET_DVR_PTZControl(data_play_handler, IRIS_CLOSE, 0);
-        ROS_INFO("Closing iris...");
+        //ROS_INFO("Closing iris...");
         ptz_state = IRIS_CLOSE_CMD;
     }
     else if ( iris==0 & ptz_state==IRIS_OPEN_CMD ) {
         NET_DVR_PTZControl(data_play_handler, IRIS_OPEN, 1);
-        ROS_INFO("Stopping openning iris...");
+        //ROS_INFO("Stopping openning iris...");
         ptz_state = FOCUS_CONTROLS_STOPPED;
     }
     else if ( iris==0 &  ptz_state==IRIS_CLOSE_CMD) {
         NET_DVR_PTZControl(data_play_handler, IRIS_CLOSE, 1);
-        ROS_INFO("Stopping closing iris...");
+        //ROS_INFO("Stopping closing iris...");
         ptz_state = FOCUS_CONTROLS_STOPPED;
     }
 

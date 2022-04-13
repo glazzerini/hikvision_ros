@@ -20,5 +20,5 @@ echo 'Pinging topcam at '$PLADYPOS_HIKVISION_IP
 ping $PLADYPOS_HIKVISION_IP -c 3 ;   
  
 echo 'Launching topside GUI...'
-roslaunch hikvision_ros start_ip_cam_stream_bttm_side_du.launch
+#roslaunch hikvision_ros start_ip_cam_stream_bttm_side.launch
 
