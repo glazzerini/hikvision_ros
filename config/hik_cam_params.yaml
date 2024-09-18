@@ -1,0 +1,19 @@
+ip_addr: "10.0.111.105"
+user_name: "stdops"
+password: "labos123"
+port: 8000
+channel: 1
+# <!--link_mode: 0-tcp, 1-udp, 2-multicast, 3-rtp, 4-rtp/rtsp, 5-rstp/http-->
+link_mode: 1
+
+
+image_width: 1920
+image_height: 1080
+camera_frame_id: "hik_camera"
+camera_name: "hik_camera"
+camera_info_url: ""
+
+PTZ_CONTROLS_TOPIC: "ptz_setpoints"
+PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC: "key_vel" # remap !!!
+PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC: "joy_vel" #remap !!!
+ROS_RATE: 10 #24 # IP cam publishes to ROS topics @fps defined not by ROS but by camera's settings

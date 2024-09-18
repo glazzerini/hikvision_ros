@@ -1,0 +1,17 @@
+<launch>
+  <node pkg="video_stream_opencv" type="video_stream" name="video_stream_node" output="screen">
+    <!-- Change this to your camera's stream URL or device path -->
+    <remap from="/image_raw/compressed" to="/camera_usb/compressed" />
+    <param name="video_stream_provider" value="rtsp://stdops:labos123@10.0.111.105:554/Streaming/Channels/101" />
+    
+    <!-- Optional Parameters -->
+    <param name="camera_frame_id" value="hikvision_camera" />
+    <param name="loop_videofile" value="false" /> <!-- Useful if you are playing video from a file -->
+    <param name="fps" value="30" /> <!-- Frames per second -->
+    <param name="flip_vertical" value="false" />
+    <param name="flip_horizontal" value="false" />
+    <param name="height" value="720" /> <!-- Image height (resize) -->
+    <param name="width" value="1280" /> <!-- Image width (resize) -->
+    <param name="frame_id" value="camera" /> <!-- The frame ID for the image messages -->
+  </node>
+</launch>

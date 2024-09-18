@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/guidolazzerini/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/guidolazzerini/catkin_ws/src/hikvision_ros/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_core/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_finders/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_libraries/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_perceptions/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_refgens/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_trackers/include/**",
+        "/home/guidolazzerini/catkin_ws/src/marta/marta_utils/include/**",
+        "/home/guidolazzerini/catkin_ws/src/usb_cam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

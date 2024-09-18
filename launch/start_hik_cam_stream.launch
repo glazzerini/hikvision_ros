@@ -1,15 +1,22 @@
 <launch>
 
-<node name = "ip_cam_rqt_dashboard" pkg = "rqt_gui" type = "rqt_gui" respawn = "false"
-ns="catamaran" output = "screen"
-args = "--perspective-file $(find hikvision_ros)/config/ip_cam_gui.perspective"/>
+<rosparam file="$(find hikvision_ros)/config/hik_cam_params.yaml" command="load" />
+
+
+<node pkg="hikvision_ros" type="hik_cam_node" name="hik_cam_node" ns="catamaran" output="screen">
+
+<!-- modify LD_LIBRARY_PATH for loading hikvision sdk -->
+  <env name="LD_LIBRARY_PATH"
+       value="$(env LD_LIBRARY_PATH):$(find hikvision_ros)/lib:$(find hikvision_ros)/lib/HCNetSDKCom" />
+</node>
+
 
 <!-- VIDEO_STREAM_OPENCV NODE -->
 <include file="$(find video_stream_opencv)/launch/camera.launch" >
         <!-- node name and ros graph name -->
-        <arg name="camera_name" value="topside" />
+        <arg name="camera_name" value="catamaran" />
         <!-- url of the video stream -->
-        <arg name="video_stream_provider" value=" rtsp://stdops:labos123@10.0.15.52:554 drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=true " />
+        <arg name="video_stream_provider" value=" rtsp://stdops:labos123@10.0.111.105:554/Streaming/Channels/101 drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=true " />
         
         <!-- rtsp://stdops:labos123@10.0.108.5:554 drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=true -->
         <!-- rtsp://stdops:labos123@10.0.108.5:554 latency=0 ! rtph264depay ! avdec_h264 ! videoconvert ! fpsdisplaysink sync=false -->
@@ -35,21 +42,5 @@ args = "--perspective-file $(find hikvision_ros)/config/ip_cam_gui.perspective"/
         <!-- visualize on an image_view window the stream generated -->
         <arg name="visualize" value="false" />
         </include>
-
-
-<arg name="ROS_RATE_IP_CAM_THROTTLED" default="10" />
-<node name = "ip_cam_throttle_node" pkg = "topic_tools" type = "throttle" respawn = "false"
-ns="topside" output = "screen"
-args = "messages image_raw $(arg ROS_RATE_IP_CAM_THROTTLED) image_raw_throttled "/>
-
-
-
-<!--
-<rosparam file="$(find hikvision_ros)/config/ip_cam_keyboard_teleop_params.yaml" command="load"  />
-<remap from="key_vel" to="ip_cam_teleop_cmd"/> 
-<node name = "ip_cam_key_teleop" pkg = "key_teleop" type = "key_teleop.py" respawn = "false" ns="catamaran" output = "screen" />
--->
-
-
 
 </launch>

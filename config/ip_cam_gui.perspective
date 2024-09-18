@@ -405,11 +405,11 @@
             "plugin": {
               "keys": {
                 "url_completion": {
-                  "repr": "['', 'https://www.proxydocker.com/en/routerpassword/10.0.108.5', 'http://10.0.108.5/notSupported.asp', 'http://10.0.108.5/doc/page/login.asp?_1613584046585', 'https://www.google.com/', 'http://10.0.108.5/doc/page/login.asp?_1613729377642', 'about:blank', 'http://10.0.108.5/', 'https://www.google.com/search?source=hp&ei=h1YtYPKuKuiGjLsPhPesqAw&iflsig=AINFCbYAAAAAYC1kl8I-Jy5b-FgxdFQ67f_Ff68ZXjdw&q=10.0.108.5&btnK=Google+pretra\u017eivanje', 'http://10.0.108.5/doc/page/login.asp?_1613046383299']",
+                  "repr": "['', 'https://www.proxydocker.com/en/routerpassword/10.0.102.105', 'http://10.0.102.105/notSupported.asp', 'http://10.0.102.105/doc/page/login.asp?_1613584046585', 'https://www.google.com/', 'http://10.0.102.105/doc/page/login.asp?_1613729377642', 'about:blank', 'http://10.0.102.105/', 'https://www.google.com/search?source=hp&ei=h1YtYPKuKuiGjLsPhPesqAw&iflsig=AINFCbYAAAAAYC1kl8I-Jy5b-FgxdFQ67f_Ff68ZXjdw&q=10.0.102.105&btnK=Google+pretra\u017eivanje', 'http://10.0.102.105/doc/page/login.asp?_1613046383299']",
                   "type": "repr"
                 },
                 "url_current": {
-                  "repr": "'http://10.0.108.5/'",
+                  "repr": "'http://10.0.102.105/'",
                   "type": "repr"
                 }
               },

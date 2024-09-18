@@ -402,37 +402,37 @@ void HikvisionCamera::initializeHikvisionCameraAtributes(){
 
 void HikvisionCamera::initializeROSParameters(){
     // LABUST-related code
-    priv_node.getParam("PTZ_CONTROLS_TOPIC", PTZ_CONTROLS_TOPIC); //,"ptz_setpoints");
-    priv_node.getParam("PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC", PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC); //,"ptz_setpoints");
-    priv_node.getParam("PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC", PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC); //,"ptz_setpoints");
+    priv_node.getParam("/PTZ_CONTROLS_TOPIC", PTZ_CONTROLS_TOPIC); //,"ptz_setpoints");
+    priv_node.getParam("/PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC", PTZ_KEYBOARD_TELEOP_CONTROLS_TOPIC); //,"ptz_setpoints");
+    priv_node.getParam("/PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC", PTZ_JOYSTICK_TELEOP_CONTROLS_TOPIC); //,"ptz_setpoints");
 
-    priv_node.getParam("ROS_RATE",ROS_RATE); //,10);
+    priv_node.getParam("/ROS_RATE",ROS_RATE); //,10);
 
 //    ROS_INFO("Ros TOPIC: %s", PTZ_CONTROLS_TOPIC.c_str());
 //    ROS_INFO("Ros rate: %d", ROS_RATE);
 
 
     /// camera parameter
-    priv_node.getParam("camera_frame_id", frame_id); //, std::string("hik_camera"));
-    priv_node.getParam("camera_name", camera_name); //,  std::string("hik_camera"));
-    priv_node.getParam("camera_info_url", camera_info_url); //, std::string(""));
+    priv_node.getParam("/camera_frame_id", frame_id); //, std::string("hik_camera"));
+    priv_node.getParam("/camera_name", camera_name); //,  std::string("hik_camera"));
+    priv_node.getParam("/camera_info_url", camera_info_url); //, std::string(""));
 
-    priv_node.getParam("ip_addr", ip_addr); //,"192.168.5.100");
+    priv_node.getParam("/ip_addr", ip_addr); //,"192.168.5.100");
     ROS_INFO("[%s] ip address:\t%s", camera_name.c_str(), ip_addr.c_str());
 
-    priv_node.getParam("user_name",usr_name); //,"admin");
+    priv_node.getParam("/user_name",usr_name); //,"admin");
     ROS_INFO("[%s] user name: \t%s", camera_name.c_str(), usr_name.c_str());
 
-    priv_node.getParam("password",password); // ,"ht123456");
+    priv_node.getParam("/password",password); // ,"ht123456");
     ROS_INFO("[%s] password:  \t%s", camera_name.c_str(), password.c_str());
 
-    priv_node.getParam("port",port); //, 8000);
+    priv_node.getParam("/port",port); //, 8000);
     ROS_INFO("[%s] port:      \t%d", camera_name.c_str(), port);
 
-    priv_node.getParam("channel",channel); //,1);
+    priv_node.getParam("/channel",channel); //,1);
     ROS_INFO("[%s] channel:   \t%d", camera_name.c_str(), channel);
 
-    priv_node.getParam("link_mode",link_mode); //, 0);
+    priv_node.getParam("/link_mode",link_mode); //, 0);
     if(link_mode < 0 || link_mode >5)
     {
         ROS_WARN("[%s] value %d for link_mode is illegal, set to default value 0 (tcp)",camera_name.c_str(), link_mode);
@@ -441,10 +441,10 @@ void HikvisionCamera::initializeROSParameters(){
     std::string _mode []  = {"tcp", "udp", "multicast","rtp","rtp/rtsp", "rstp/http"};
     ROS_INFO("[%s] link mode: \t%s", camera_name.c_str(), _mode[link_mode].c_str());
 
-    priv_node.getParam("image_width",image_width) ; //,1280);
+    priv_node.getParam("/image_width",image_width) ; //,1280);
     ROS_INFO("[%s] image width:  \t%d", camera_name.c_str(), image_width);
 
-    priv_node.getParam("image_height",image_height); //, 720);
+    priv_node.getParam("/image_height",image_height); //, 720);
     ROS_INFO("[%s] image height: \t%d", camera_name.c_str(), image_height);
 
 }
